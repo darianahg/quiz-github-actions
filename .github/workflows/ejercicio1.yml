@@ -1,0 +1,18 @@
+﻿name: Ejercicio 1
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mensaje personal
+        run: echo "Hola, mi nombre es Dariana Hernandez"
+
+      - name: Mostrar fecha
+        run: date
+
+      - name: Mostrar sistema operativo
+        run: echo "Sistema operativo: $RUNNER_OS"
